@@ -1,0 +1,797 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>所有资源目录，公众号&amp;群聊&amp;用户分享 | 馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.12.0/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    所有资源目录，公众号&amp;群聊&amp;用户分享
+                </h2>
+                <div class="post-info">
+                    
+                        <span id="/post/1305/" class="leancloud_visitors" data-flag-title="所有资源目录，公众号&amp;群聊&amp;用户分享">
+                            <i class="fa-solid fa-eye" style="font-size: 11px"></i>
+                            <i class="leancloud-visitors-count">Null</i>
+                        </span>
+                     
+                    <!-- <time class="post-time gt-c-content-color-first">
+                        · 2099-09-09
+                    </time>          -->
+                    
+                        <a href="https://qnshare.github.io/tag/youxi/" class="post-tags">
+                            &nbsp;&nbsp;# 游戏
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>所有资源一览表，大部分为馆主网上搜集用户投稿等，小部分为付费购买。</p>
+<p>资源都分享过给群聊，公众号，赞助用户等</p>
+<!-- more -->
+<h2 id="精选历史分享">🟡 精选历史分享</h2>
+<details>
+	<summary style="font-size: 16px; color:#00A97F; font-weight: 600;">点击展开或关闭</summary>
+	<br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 塞尔达王国之泪全+柚子模拟器</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 《网络小说精校全本合集》2200本·已分类带目录[Epub]</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 《天涯神贴》合集［史上最全整理9999篇］</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 俄罗斯PJ游戏单机游戏全部下载链接</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 4K 蓝光原盘 磁力链接 5320部</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 知识星球 付费课程（400篇）</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 日本动漫2020到2023年全部【压缩包共20T】（已失效）</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 678部热门日漫+轻小说</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 设计师必备十万字体库</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 剧本杀剧本100套</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 啃书网全站网络小说合集 22w本 解压640G</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 高中英语3500词【全网最全整理】31.6GB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 知轩藏书全站所有书籍共789G</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 32个行业各类合同模板 900份</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 《精校200W字以上长篇小说100部》质量高口碑好可以一追[txt]</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 短视频剪辑配音音效库(9000+)</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟡 漫画合集【168部304GB】，你想看的这里都有！！！</p>
+</details>
+<br>
+<h2 id="源码分享历史">🔵 源码分享历史</h2>
+<details>
+	<summary style="font-size: 16px; color:#00A97F; font-weight: 600;">点击展开或关闭</summary>
+	<br>
+	<p>&nbsp&nbsp&nbsp&nbsp🔵 后台功能强大的PHP开源版授权系统【亲测】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 企业级自动发卡平台【亲测】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 2022最新简约好用的二次元图床系统源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 2024最新开源解密版TwoNav网址导航系统源码去授权破解版 内置二十多套主题模板</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 92kaifa手艺活网DIY手工制作网站源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 Discuz仿今日头条模板Discuz新闻资讯商业版GBK模板</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 Fiora二次元的WEB多人在线网络聊天系统源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 Gxlcms有声小说系统小说听书系统源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 ModStartBlog 现代化个人博客系统 v5.2</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 NFT数藏源码已接支付数字藏品源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 PixPro 一个开源图床，非常强大的压缩率</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 ThinkPHP高仿蓝奏云网盘对接易支付系统程序</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 WordPress原创插件：Code-verification 微信或QQ二维码验证引导关注</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新版wordpress网创资源美化以及更新自动同步插件</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 多功能秒达工具箱全开源源码，可自部署且完全开源的中文工具箱</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 个人发卡程序手机版自适应源码 完美版对接免签约支付</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 花粥修改版彩虹授权系统全解修复源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 解忧云SMS短信服务平台系统 短信发送系统 全解密完美版</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 界面很可爱的二级域名分发平台源码带视频教程</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 鲸发卡企业发卡网源码免授权</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 开源版值联云卡自动售卡商业系统v2.0</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 全开源二次元风格发卡源码分享</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 软件推广导航页面网站源码可封装应用app下载软件引流整站模板程序</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 社区交源码 支持聊天聊-礼物系统-直-系统-缘分匹配 搭建教程</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 天环公益首发原创开发进度网站 带后台</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 同行卖999的付费进群系统</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 微信抖音快手三合一壁纸小程序源码_后端管理设置功能丰富</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 新物联网卡管理平台源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 幸运抽奖系统带后台源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 修罗bbs全站程序打包带数据库备份</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 悬赏猫任务平台破解去授权版 用户自主发布任务</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新PHP网盘搜索引擎系统源码 附教程</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新UI六零导航系统源码 多模版全开源</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新版红盟发卡网源码分享</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新梨花带雨网页音乐播放器</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新牛牛手办数码幸运盲盒小程序源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新破解的物联网卡管理平台源码</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🔵 最新小猫咪PHP加密系统源码</p>
+</details>
+<br>
+<h2 id="轻小说和漫画">🟣 轻小说和漫画</h2>
+<details>
+	<summary style="font-size: 16px; color:#00A97F; font-weight: 600;">点击展开或关闭</summary>
+	<br>
+	<p>&nbsp&nbsp&nbsp&nbsp🟣 《AREA51》JPG&MOBI</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《Hello,Hello and Hello》1-2卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《Only Sense Online 绝对神境》第1-16全卷+外传 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《办公室里开不出百合花》</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《北山猛邦11部作品集》</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《碧阳学园学生会议事录学生会的一己之见》EPUB 1-10卷 含番外默示录+新篇</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《变态王子与不笑猫》8卷完MOBI&EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《传说中勇者的传说》EPUB 1-11卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《吹响吧！上低音号》EPUB 1-7卷+后日谈</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《春物我的青春恋爱物语果然有问题》 EPUB 全卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《打工吧！魔王大人》1-21卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《带着外挂转生为公会柜台小姐》1-5卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《刀语》含真庭语 EPUB 1-12卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《等级封顶的最强剑圣女碧翠斯也有弱点》1-7卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《第101篇百物語》 1-8卷 EPUB 全1卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《电波女与青春男》EPUB 1-8卷+SF+外传</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《东京暗鸦》1-16卷+EX EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《断章格林童话》EPUB 1-17卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《断罪的EXCEED》EPUB 1-5卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《发条精灵战记 天镜的极北之星(天镜的阿尔德拉民)》1-14卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《奋斗吧！系统工程师》EPUB 1-16卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《棺姬嘉依卡》EPUB 1-12卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《贵族侦探爱德华》EPUB 1-10卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《海鸟冬月的“荒唐事”》全1卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《和你恋爱什么的 应该是不可能的》1-2卷+短篇集 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《黑钢的魔纹修复士》EPUB 1-13卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《幻想谭教诲师》EPUB 1-6卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《焦点深度》全1卷EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《金色文字使 -被四名勇者波及的独特外挂》1-13卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《邻座的艾琳同学偶尔会用俄语悄悄撒娇》含画集特别书页</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《临界杀机》EPUB 1-6卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《铃芽之旅》全1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《罗德斯岛战记》EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《萝球社！》EPUB 1-15卷 含短篇</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《没有明天的我们，在昨天相恋》全1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《明日的世界星光闪耀》1-3卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《魔弹之王与战姬》1-18卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《魔法学院劣等生》轻小说</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《你喜欢的不是女儿而是我!》EPUB 1-7卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《年度最垃圾伪圣女》</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《偶像总爱被吐槽！她喜欢被吐槽！》</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《漆黑的子弹》EPUB 1-7卷+番外</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《人气妹妹与受难的我》EPUB 1-9卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《认真和我谈恋爱!》1-7卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《如果明天，这个世界就会终结》1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《圣魔之血》RAM+ROM+神学大全 1-13卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《桃音汐音的轻小说日记》EPUB 1-4卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《天才王子的赤字国家振兴术》EPUB 1-10卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《天之弱》全1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《玩伴猫耳娘》1-8卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《万能鉴定士Q的事件簿》1-12卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《汪汪物语～我说要当富家犬，没说要当魔狼王啦！》EPUB 1-3卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《维多利亚蔷薇色》EPUB 1-14卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我的妹妹会认汉字》1-5卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我会呼唤你的名字》全1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我推是反派大小姐》EPUB 1-5卷 蓝奏云下载</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《贤者大叔的异世界生活日记》1-15卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《学战都市Asterisk》1-17卷+番外 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《异世界拷问姬》1-9卷+外传 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《英雄教室》1-9卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《与僵尸并行 致我们已经彻底腐烂的青春》 全1卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《与你相伴直至腐朽未来》全1卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《圆环少女》EPUB 1-13卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《在紫阳花开的季节我们彼此感应》全1卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《葬送的芙莉莲 ~前奏~》EPUB 全1卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《织田信奈的野望》1-22卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《中古也要谈恋爱》EPUB 1-13卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《终将成为神话的放学后战争》1-10卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《重装武器》1-16卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《百炼霸王与圣约女武神》1-19卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《堤亚穆帝国物语 ～从断头台开始，公主重生后的逆转人生～》1-10卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《哥布林杀手》1-16卷+外传 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《轮回第7次的反派千金，在前敌国尽尝自由自在的新娘生活》EPUB 1-6卷+短篇</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《落第骑士英雄谭》EPUB 1-18卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《魔弹之王与冻涟的雪姬》1-8卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《七魔剑支配天下》1-12卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《全知读者视角》EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我的幸福婚约》1-6卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我是星际国家的恶德领主！》1-7卷+WEB1-13卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《我怎么可能成为你的恋人，不行不行！(※不是不可能！？)》EPUB 1-6卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《一周一次买同学的那些事～两个人的时间，借口的五千元～》EPUB 1-4卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《异世界迷宫最深部为目标》EPUB 1-9卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《幼女战记》EPUB 1-12卷</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《猪肝记得煮熟再吃》1-7卷 EPUB</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟣 《佐佐木与文鸟小哔》1-7卷 EPUB</p>
+</details>
+<br>
+<h2 id="小程序中分享">🟠 小程序中分享</h2>
+<details>
+	<summary style="font-size: 16px; color:#00A97F; font-weight: 600;">点击展开或关闭</summary>
+	<br>
+	<p>&nbsp&nbsp&nbsp&nbsp🟠 商店模拟器：超市+最终幻想15+沉没之地</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ012</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 空洞骑士+林间小世界+荒野大镖客：救赎</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ011</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 死亡细胞+逃离后室+骑士与龙3</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ010</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 战争召唤地狱之门：东线+架空地图模拟器+杂交版v2.6</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp获取关键词：GZ009</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 骗子酒吧联机版+求生之路2+要战便战</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ008</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 破门而入+行尸走肉3+战龟2</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ007</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 蜡烛人+规则怪怪谈+打造世界</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ006</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 活过今天+我们身边的狼+幽浮2典藏合集</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ005</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 塞尔达传说1：旷野之息+塞尔达传说2：王国之泪</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：塞尔达传说</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 使命召唤全系列 [1-17全]</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：使命召唤</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 看门狗3：军团</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：看门狗</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 黑神话悟空像素版[安卓+PC]</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：黑神话悟空像素版</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 骗子酒吧：可头部伸缩/随意移动/疯狂转头</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：骗子酒吧</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 骗子酒吧：可头部伸缩/随意移动/疯狂转头</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ002</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 [备忘] 快捷键备忘录</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：A01</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 两位君主+水果忍者+经典版泰拉瑞亚</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：GZ001</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 影视软件合集</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：家用</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟠 Tvbox和影视仓接口</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp获取关键词：接口</p>
+</details>
+<br>
+<h2 id="群聊分享历史">🟢 群聊分享历史</h2>
+<details>
+	<summary style="font-size: 16px; color:#00A97F; font-weight: 600;">点击展开或关闭</summary>
+	<br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 HookVip v3.5.6 解锁会员模块，支持超多软件随意解锁各种VIP模块</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 30+款安卓TV软件</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 《塞尔达传说：王国之泪》《塞尔达传说：荒野之息》的续集，Switch平台发售，286元左右</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 美女 请别影响我学习 时光倾城-蔓延心间+全DLC 官方中文绿色免安装破解版</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 300+WinKawaks街机游戏合集【童年经典】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 2023番茄人气TOP100本</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 350本热门小说</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 黑神话悟空相关</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 精选单机游戏30款【耳熟能详】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 短视频制作素材——开车视角</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 表情包日入1500+项目实操教学</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 知识星球 付费课程（400篇）【价值49.9r+】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 起点爆款小说100多款</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 软件合集【包括20款全平台支持动漫软件精选集】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 Mokup Frames截图美化</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 猴子分身多开</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 天涯全站精华神贴4000+【已和谐】</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 变声器</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 电视家升级版</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 38门小语种</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 坏男孩学院 官方入门课程</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 经典热门恐怖片87部合集（216GB）</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 给摄影爱好者小白的极简入门教程</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 最新450个搞钱玩法合集链接</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 歌词适配复活版</p>
+    <br>
+    <p>&nbsp&nbsp&nbsp&nbsp🟢 植物大战僵尸幼儿园画风BT版【安卓+Win】</p>
+</details>
+<br>
+
+                </div>
+                <!-- 网站声明代码start -->
+                <div class="gz-post-copyright">
+                    <div>
+  <!-- 网站介绍代码start -->
+  <div>
+    <fieldset
+      style="
+        border: 1px dashed #008cff;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 2em;
+        color: #6d6d6d;
+      "
+    >
+      <legend
+        align="center"
+        style="
+          padding: 8px;
+          font-size: 18px;
+          font-weight: 600;
+          width: 55%;
+          text-align: center;
+          background-color: #008cff;
+          border-radius: 5px;
+          background-image: linear-gradient(to right, #FFCC99, #FF99CC);
+        "
+      >
+        网站基本信息
+      </legend>
+      <p>
+        💮 关于我们：
+        <span style="color: #3333ff">
+          <span style="color: #FF6666; font-size: 16px">
+            <strong>公众号：青柠软件馆</strong>
+          </span>
+        </span>
+      </p>
+      <p>
+        🍁 本站永久发布页：
+        <font color="#FF6666">https://link3.cc/qingningshare</font>
+      </p>
+      <p>
+        🍀 资源链接失效反馈&防失联请务必加入企鹅频道：<font color="#00A97F">https://pd.qq.com/s/neti8d2a</font>
+      </p>
+      <p>
+        🌸 兴趣使然的小小公益网站罢了，惟愿小众，来日方长，幸会✨
+      </p> 
+    </fieldset>
+  </div>
+  <!-- 网站介绍代码end -->
+  <br />
+</div>
+
+                </div>
+                <!-- 网站声明代码end -->
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://qnshare.github.io/post/1322/" class="post-title gt-a-link">
+                    谢珩的扶桑（文笔细腻一流）
+                </a>
+            </div>
+        
+
+        
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'hDcUOySNcxLIuhfhlFv0sh8m-gzGzoHsz',
+		appKey: 'kQc2kUAsCtZtHy1tgB5wijMB',
+		// avatar: 'mp',
+		// avatar: '',
+		avatar_cdn: 'https://cravatar.cn/avatar/78fff0a88237cd4b1746ab471302f147.png',
+		pageSize: 10,
+		recordIp: true,
+		placeholder: '\\(≧▽≦)/你想说什么呢？聊聊叭~',
+		visitor: true,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+    </div>
+</div>
+
+<script>
+    const zooming = new Zooming({
+        bgColor: 'transparent',
+        bgOpacity: 0.8,
+        scaleExtra: 1.3
+    })
+    zooming.listen('.post-content img');
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll('.post-content a');
+        links.forEach(link => {
+            // 设置 target 属性为 _blank
+            link.setAttribute('target', '_blank');
+            // 添加 rel 属性以提高安全性
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    });
+</script>
+</body>
+</html>

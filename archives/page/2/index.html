@@ -1,0 +1,795 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+        <div class="post-container">
+            <div class="post-detail gt-bg-theme-color-first">
+                <article class="gt-post-content">
+                    <h2 class="post-title">归档</h2>
+        
+
+<div class="archives-container">
+    
+        <h2 class="year gt-c-cotent-color-first">2024</h2>
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1294/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-23&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            12306Bypass分流抢票最新版，火车高铁抢票
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1296/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-23&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            微信公众号批量下载工具，支持下载评论，导出为html/mhtml/md/pdf/docx
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1292/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            Pintree：浏览器书签转换为可共享导航网站
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1291/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-20&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            28天极速减脂计划，腹肌打造瘦肚子全方案
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1290/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-19&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            绝绝子的二次元电脑高清壁纸合集，超惊艳
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1289/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-18&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            50款古风动态视频素材精选
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1288/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-17&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            古龙作品全集 (81册) [pdf+全格式]
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1287/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-16&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            亚马逊收费电子书合集，共1000+本
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1286/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-15&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            32个行业各类合同模板共900套，财务法务必备！
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1285/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-14&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            书法练字课程合集，名家手把手教你写一手漂亮的好字
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1284/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-13&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            Winner Launcher-v4.9，解锁版三方桌面
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1283/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-12&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            外面付费文，带你看透人性，看透赚钱的隐秘法则
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1282/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-11&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            李越恋爱课堂完结，专家带你追求艺术
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1281/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-10&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            MBTI16型人格分析高级版（官网5534软妹币）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1280/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-09&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            北大学霸私藏的高效学习术，教你快速学会一切技能，夺回人生主动权！
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1279/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-08&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            金庸珍藏全小说集MOBI 武侠小说爱好者的必读经典
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1278/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-07&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            Bandicam - 班迪录屏，录制神器，便携免安装
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1277/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-06&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            小骨:英雄杀手 端游+steam完美移植手游
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1276/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-05&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            海贼王全彩版漫画珍藏版
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1275/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-04&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            Pixiv漫画P站-插画漫画小说 去广告纯净版
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1274/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-03&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            36节课 实现Excel小白到高手的进阶
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1273/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-02&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            网络热门古风神曲合集
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1272/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-10-01&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            西游记全本有声，无修原版
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1271/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-30&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            珍藏游戏，魔兽争霸3：冰封王座合集
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1270/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-29&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            种田流小说大合集 各大平台top小说 181本大合集
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1269/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-28&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            绝版中医课程资料大全 原价18888元
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1268/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-28&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            天涯神贴网页版 全站分类详细资源：天涯再会
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1267/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            素材克隆出完美声音，实操干货+变现教程，吊打配音软件
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1266/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            甄选157首抖音神曲，车载DJ音乐，超级嗨
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1265/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            OS男士形象VIP班！做自己的形象管理专家
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1264/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            完蛋！我被美女包围了！中文原版
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1263/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            豆瓣评分最高的170本书精选，打包带走
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1262/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            精选付费短剧汇总，分类超全持续更新中
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1261/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                             微信聊天宝典 微信聊天撩妹攻略秘笈（完结）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1260/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            绝版推背图 千古奇书 最全所有版本合集
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1259/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            A4纸打印PDF模板合集，全类型应有尽有
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1258/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            美女 请别影响我学习 时光倾城-蔓延心间【端游】
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1257/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            超全可免费商用的字体素材900款
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1256/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            大象公会：一天一个冷知识，最全180+
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1255/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            叔贵的减脂训练课（完结），快速燃脂瘦身
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1254/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            最全年终工作神器（年终奖、考核、调薪、评优、总结）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1253/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-27&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            民间怪闻故事500+超全.佚名.演播国之学文化
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1252/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-26&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            图床最全合集，比较靠谱（国内外，站长必备）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1251/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-25&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            无版权可商用宣传片背景音乐500+（可用于视频素材）
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1250/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-24&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            坏男孩学院 官方全套入门课程
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1249/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-23&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            剧本杀剧本100套，精选好玩不腻
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1248/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-22&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            精编珍藏34种行业分类电子书最全合集
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1247/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-21&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            高级催乳师精品细节视频课程【全】
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1246/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-20&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            HR最喜欢的100个满分简历模板
+                        </div>
+                    </a>
+                </article>
+            
+        
+            
+                <article class="post">
+                    <a href="https://qnshare.github.io/post/1245/">
+                        <div class="post-title gt-c-content-color-first">
+                            <small><b>2024-09-19&nbsp;&nbsp;·&nbsp;&nbsp;</b></small>
+                            夜鹰10分钟救命课（完结）推荐都去了解下！
+                        </div>
+                    </a>
+                </article>
+            
+        
+    
+</div>
+
+        <div class="pagination-container">
+    
+        <a href="https://qnshare.github.io/archives/" class="prev-page gt-a-link">上一页</a>
+    
+    
+        <a href="https://qnshare.github.io/archives/page/3/" class="prev-page gt-a-link">下一页</a>
+    
+</div>
+
+    </article>
+</div>
+</div>
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+    </div>
+</div>
+</body>
+</html>

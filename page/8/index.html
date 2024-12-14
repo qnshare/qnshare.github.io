@@ -1,0 +1,615 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1274/">
+                                <span class="post-title gt-c-content-color-first">36节课 实现Excel小白到高手的进阶</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>36节课 实现 Excel小白到高手的进阶，包含配套，夸克网盘分享</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-10-03 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/jiaocheng/" class="post-tag">
+                                # 教程
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1274/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/fHYvhycWndxGoVK.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1273/">
+                                <span class="post-title gt-c-content-color-first">网络热门古风神曲合集</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>立即获取这份200多首旋律优美的古风神曲合集，开启你的古风音乐之旅，让每一个夜晚都充满诗意与美好！</p>
+<p>让这些古风神曲成为你生活中的一部分，在音乐中寻找内心的平静与幸福。无论是学习、工作还是休闲时光，这些旋律都会是你最好的陪伴。</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-10-02 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/yingyin/" class="post-tag">
+                                # 影音
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1273/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/5KoGjByhvrAOHSz.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1272/">
+                                <span class="post-title gt-c-content-color-first">西游记全本有声，无修原版</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <ol>
+<li><strong>尊重原著，不做改动</strong>——严格按照明刊本金陵世德堂本，真实再现《西游记》的每一个细节，带你重回经典。</li>
+<li><strong>对话轻松，讲述简洁</strong>——生动还原经典故事，让你在轻松愉快的阅读中，回味大师之作的魅力。</li>
+<li><strong>穿插诗词元曲、对联韵文</strong>——丰富的文化元素，朗朗上口，增加阅读乐趣，带你领略中华文化的博大精深。</li>
+<li><strong>串讲百集西游百科</strong>——让你在阅读故事的同时，了解到更多你不知道的文化背景和历史知识。</li>
+</ol>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-10-01 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/yousheng/" class="post-tag">
+                                # 有声
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1272/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/O6EQk9j1yG4l7HB.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1271/">
+                                <span class="post-title gt-c-content-color-first">珍藏游戏，魔兽争霸3：冰封王座合集</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>魔兽争霸3：冰封王座v1.20~1.27，官方中文，官方原声19首OST，赠3000张地图，赠魔兽争霸win10主题|赠修改器等附件，赠其他7个版本</p>
+<p>【魔兽争霸：人类与兽人】</p>
+<p>【魔兽争霸：氏族之王】</p>
+<p>【魔兽争霸2：黑潮】</p>
+<p>【魔兽争霸2：战网版】</p>
+<p>【魔兽争霸3：八族争霸】</p>
+<p>【魔兽争霸3：涅槃重生】</p>
+<p>【魔兽争霸3：邪魔复苏】</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-30 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/Windows/" class="post-tag">
+                                # Windows
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/youxi/" class="post-tag">
+                                # 游戏
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1271/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/1fK8VoSEWb53Zlw.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1270/">
+                                <span class="post-title gt-c-content-color-first">种田流小说大合集 各大平台top小说 181本大合集</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>找不到好看的种田流小说？我们已经为你筛选出了最受欢迎的181本种田流小说！汇集各大平台上备受喜爱的种田流小说，无论是都市种田、异界种田，还是系统种田，应有尽有！</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-29 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/shuji/" class="post-tag">
+                                # 书籍
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1270/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/2d3W5uLl9zrpmns.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1269/">
+                                <span class="post-title gt-c-content-color-first">绝版中医课程资料大全 原价18888元</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>中医作为中华文化的瑰宝，其博大精深的理论和方法值得深入学习与传承。这份资源大全将成为你不可或缺的宝贵资料，帮助你全面系统地掌握中医知识，无论你是初学者还是专业从业者，都能从中受益。中医基础理论、中医诊断方法、中医治疗方法、中药方剂、中医养生保健等。偏方资源：民间流传的</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-28 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/shuji/" class="post-tag">
+                                # 书籍
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1269/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/28/YkMoBG5zQXtCSlL.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1268/">
+                                <span class="post-title gt-c-content-color-first">天涯神贴网页版 全站分类详细资源：天涯再会</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>深入天涯神贴，重温经典！天涯论坛，曾经的网络江湖，汇聚无数神贴。天涯神贴在线版，天涯再会，经典永不落幕，快来一起重温那些年我们追过的神帖吧！</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-28 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/shiyongwangzhan/" class="post-tag">
+                                # 实用网站
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1268/" class="post-feature-image">
+                        <img src="https://img.liesys.com/2024/09/20/2024092012.png">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1267/">
+                                <span class="post-title gt-c-content-color-first">素材克隆出完美声音，实操干货+变现教程，吊打配音软件</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>1分钟素材克隆出完美声音，秒杀市面所有配音软件，完全免费，实操干货+变现教程此软件完全吊打市面上百分之99.9的配音软件，做自媒体必备</p>
+<p>目前AI领域市场巨大，学会本节课的声音克隆方法，不愁变现，不管是带学员还是做定制语音都是不错的变现选择，全程干货</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-27 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/jiaocheng/" class="post-tag">
+                                # 教程
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/wangzhuanxiangmu/" class="post-tag">
+                                # 网赚项目
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1267/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/27/aQXJC8jwLP4hfKq.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1266/">
+                                <span class="post-title gt-c-content-color-first">甄选157首抖音神曲，车载DJ音乐，超级嗨</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>甄选157首抖音神曲，车载DJ音乐，超级嗨，夸克网盘分享！</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-27 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/yingyin/" class="post-tag">
+                                # 影音
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1266/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/27/H2V7CmNYaceKtul.webp">
+                    </a>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div class="post-head-items">
+                        <div class="post-title-items">
+                            
+                            <a href="https://qnshare.github.io/post/1265/">
+                                <span class="post-title gt-c-content-color-first">OS男士形象VIP班！做自己的形象管理专家</span>
+                            </a>
+                        </div>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p>通过男士形象班的系统学习，了解适合自己的色彩群、服装款式风格、发型、掌握时尚搭配技巧和衣橱管理，会买衣服，会搭配，做自己的形象管理专家</p>
+
+                        </div>
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            <!-- 发布于 2024-09-27 -->
+                            标签· 
+                        </time>
+                        
+                            <a href="https://qnshare.github.io/tag/jiaocheng/" class="post-tag">
+                                # 教程
+                            </a>
+                        
+                            <a href="https://qnshare.github.io/tag/ziyuanxiazai/" class="post-tag">
+                                # 资源下载
+                            </a>
+                        
+                    </div>
+                </div>
+                
+                    <a href="https://qnshare.github.io/post/1265/" class="post-feature-image">
+                        <img src="https://s2.loli.net/2024/09/27/7Alhqzt9mH5GYLs.webp">
+                    </a>
+                
+            </div>
+        
+    </div>
+</div>
+
+        <div class="pagination-container">
+    
+        <a href="https://qnshare.github.io/page/7/" class="prev-page gt-a-link">上一页</a>
+    
+    
+        <a href="https://qnshare.github.io/page/9/" class="prev-page gt-a-link">下一页</a>
+    
+</div>
+
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+    </div>
+</div>

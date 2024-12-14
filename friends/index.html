@@ -1,0 +1,570 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>二次元导航 - 馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+</head>
+
+<body>
+<div class="main gt-bg-theme-color-first">
+        <div class="main-content">
+            <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+            <div class="post-container">
+                <div class="post-detail">
+                    <article>
+                        <!-- <div class="post-content-wrapper"> -->
+                            <div class="post-content">
+                                <div class="friends-desc">
+                                    <div style="font-size: 15px; color: #696969;">
+导航投稿一丢丢小要求哦
+<br>
+<br>
+<div style="margin-left: 10px">
+● 网站不存在大量广告<br>
+● 并不是经常性不能访问（扶着点墙也行）（其余没啥要求）<br>
+● 二次元类型，界面花里胡哨优先[害羞]<br><br>
+</div>
+如果符合要求的话，请在留言版块投稿呢!
+<br>
+</div>
+<br>
+                                </div>
+                                    
+                                            <h3 class="link-class" style="font-weight: 700;">友链</h3>
+                                            <div class="friends-content">
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/github.com">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">网站发布页</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>如果有一天发现找不到我了，就来这看看吧！</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/t.alcy.cc">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://t.alcy.cc/" target="_blank">栗次元API</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>热衷于花里胡哨的，提供二次元随机图床API</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                            <h3 class="link-class" style="font-weight: 700;">常用网站</h3>
+                                            <div class="friends-content">
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/xn--4gq62f52gdss.ink">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://xn--4gq62f52gdss.ink/#/register?code=qY557rAh" target="_blank">一元机场</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>安全、稳定、不跑路、12￥/年，备用首选</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.speedtest.net">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.speedtest.net/" target="_blank">speedtest</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>网络测速，测量上传下载速度</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/whoer.net">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://whoer.net/zh" target="_blank">WHOER</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>检查您自己的IP地址和DNS地址</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.itdog.cn">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.itdog.cn/" target="_blank">itdog</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>网站测速，在线&amp;多地&amp;多线路ping，网络&amp;服务器延迟测试</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                            <h3 class="link-class" style="font-weight: 700;">二次元相关</h3>
+                                            <div class="friends-content">
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.acgfans.me">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://ads-static.xhscdn.com/crm/104101sg314kceo3tg206crb9bg0000001c1h4j1m7si14" target="_blank">番薯动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>致力为所有动漫迷们提供最好看的动漫</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.mxdm.xyz">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.mxdm.xyz/" target="_blank">MX动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>樱花动漫外最好打的备用动漫网站</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.cyc-anime.net">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.cyc-anime.net/" target="_blank">次元城动画</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>海量蓝光日漫 随时想看就看</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://www.agedm.org/favicon.ico">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.agedm.org/" target="_blank">ACE动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>专业的在线动漫网站，动漫免费在线观看，高品质画质，实时更新，追番利器!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.zzzfun.one">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="http://www.zzzfun.one/" target="_blank">ZzzFun动漫视频网</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>提供最新最快的动漫新番资讯和在线播放，开心看动漫，无圣骑、无暗牧</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://anime1.me/favicon-32x32.png">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://anime1.me/" target="_blank">Anime1.me</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>最推荐，在线选择字幕组观看动漫</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.mgnacg.com">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.mgnacg.com/" target="_blank">橘子动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>高清晰画质的在线动漫、高速播放、更新及时在线，致力为所有动漫迷们提供最好看的动漫</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/share.dmhy.org">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://share.dmhy.org/" target="_blank">动漫花园资讯网</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>动漫爱好者交流的平台、动漫BT下载、ED、动漫游戏资讯和分享</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/share.acgnx.se">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://share.acgnx.se/" target="_blank">末日動漫資源庫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>拥有华语范围内最多最全的ACG资源,能为所有动漫爱好者提供最全的资源检索服务</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/hanime1.me">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://hanime1.me/" target="_blank">Hanime1.me</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>热门动漫追番平台</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://www.dmmiku.com/template/conch/asset/img/favicon.png">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.dmmiku.com/" target="_blank">异世界动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>最全最流畅，天使动漫专属</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/dick.xfani.com">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://dick.xfani.com/" target="_blank">稀饭动漫</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>看无修动漫必备，免费高清动漫分享</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.anfuns.org">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.anfuns.org/" target="_blank">AnFuns</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>要么播放流畅，要么就是播放失败，不会出现卡顿情况</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                            <h3 class="link-class" style="font-weight: 700;">小说故事</h3>
+                                            <div class="friends-content">
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/onehu.xyz">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://onehu.xyz/" target="_blank">我不是盐神</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>知乎内容的免费搬运站，无需会员付费即可免费阅读</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/saltsgod.com">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://saltsgod.com/" target="_blank">盐神居</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>知乎盐选文章目前接近1千篇了，而且还在不断更新的</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.yanxuan.org">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.yanxuan.org/" target="_blank">盐选-推荐</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>网站界面好看，没有广告</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="friend-box">
+                                                    <img class="friend-avatar" src="https://favicon.im/www.yanxuanwk.com">
+                                                    <div class="flink-info">
+                                                        
+                                                            <a class="gt-c-content-color-first" href="https://www.yanxuanwk.com/" target="_blank">盐选文库</a>
+                                                        
+                                                        <br />
+                                                        <div class="flink-info-desc gt-c-content-color-first">
+                                                            <p>提供免费的知乎盐选文章在线阅读，而且免费无广告</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        
+                                    
+                                </div>                                
+                        <!-- </div> -->
+                    </article>
+                </div>
+                
+            </div>
+            <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+        </div>
+    </div>
+</body>
+
+</html>

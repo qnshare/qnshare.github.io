@@ -1,0 +1,553 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>扶山枝（番外） | 馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.12.0/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    扶山枝（番外）
+                </h2>
+                <div class="post-info">
+                    
+                        <span id="/post/1316/" class="leancloud_visitors" data-flag-title="扶山枝（番外）">
+                            <i class="fa-solid fa-eye" style="font-size: 11px"></i>
+                            <i class="leancloud-visitors-count">Null</i>
+                        </span>
+                     
+                    <!-- <time class="post-time gt-c-content-color-first">
+                        · 2024-11-29
+                    </time>          -->
+                    
+                        <a href="https://qnshare.github.io/tag/nicestory/" class="post-tags">
+                            &nbsp;&nbsp;# 精选故事
+                        </a>
+                    
+                        <a href="https://qnshare.github.io/tag/b476QU0gFp/" class="post-tags">
+                            &nbsp;&nbsp;# 恋爱
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>番外一（燕归 x 孟晚吟）</p>
+<p>番外二（沈清轩 x 孟扶鹤：帝后甜甜日常，完）</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2024/11/29/oFhL5MRfwbtSCY9.webp" alt="图片加载失败" loading="lazy"></figure>
+<h2 id="番外一燕归-x-孟晚吟">番外一（燕归 x 孟晚吟）</h2>
+<p>（一)</p>
+<p>孟晚吟从小就知道，她以后是要做太子妃的人。</p>
+<p>父亲对她耳提面命，她是孟家寄予厚望的嫡长女，身份尊贵，不可轻易抛头露面，要以最好的姿态，嫁给太子做太子妃。</p>
+<p>她也没有辜负期望，集一身才华，成了孟家小心翼翼捂着的骄傲。</p>
+<p>但孟晚吟知道，她不喜欢这样。</p>
+<p>她向往的是夫不纳妾，琴瑟和鸣，伉俪情深。</p>
+<p>她不想做高贵的、懂事的、大方的未来皇后，她也想随心所欲、不被拘束，她也想能被人无缘无故地宠在心尖上。</p>
+<p>这些心事，没有一个人知道。</p>
+<p>但当某一天，孟晚吟在街上看到被人簇拥着的太子，款款向她走来，笑容明朗地说，孟小姐你好。这时她心想，或许以后相敬如宾，也不是不能接受。</p>
+<p>（二）</p>
+<p>孟晚吟最近发现了一个秘密。</p>
+<p>人小鬼精的小妹，喜欢的是成天欺负她的九皇子。</p>
+<p>小妹个子没多大，但她喜欢故意找九皇子的麻烦，然后等着九皇子对她锲而不舍地算后账。</p>
+<p>九皇子看小妹眼里也有光。</p>
+<p>孟晚吟感觉自己应该撮合他们一下，于是她找上了九皇子的随身侍卫，尉燕归。每次九皇子偷偷来府里找小妹，都会让这个侍卫放哨。</p>
+<p>燕归总是一副冷冷清清的模样，剑眉入鬓，单眼皮的眼角微微向上挑，薄唇紧抿，五官线条说不出的俊美流畅。</p>
+<p>他正抱着双臂站在院门口的柳树下，漠然地看着角落里互相抬杠的小妹和九皇子，面上一派疏离。</p>
+<p>孟晚吟走到他面前。</p>
+<p>燕归视线扫过她精致婉约的眉眼，双手作礼，「孟大小姐有何要事？」</p>
+<p>孟晚吟眼里闪着狡黠的光，显出与平时不符的灵动来，让燕归心头一怔。</p>
+<p>她笑道：「尉侍卫，我觉得九皇子来找我小妹时，院子里的风光极好。不如，你让九皇子常来此，怎样？」</p>
+<p>初出云层的朝霞如云如雾似的落在孟晚吟脸上，让她本就好看的眼睛映出早春融雪般的微光。</p>
+<p>燕归突然心头急促地一跳，有些匆忙地移开视线，回道：</p>
+<p>「那以后就常来打扰了。」</p>
+<p>（三）</p>
+<p>九皇子来找孟扶鹤，孟晚吟也慢慢跟燕归混熟了。</p>
+<p>她原本以为燕归是个冷淡疏离的人，没想到他居然是面冷心热那一款的。</p>
+<p>「这是送我的？」孟晚吟拿着燕归送她的纸鸳鸯，好奇道。</p>
+<p>纸鸳鸯折得精致小巧，看起来颇费心思。</p>
+<p>燕归撇开视线，淡淡点了点头，「常来麻烦孟大小姐，尉某心中惭愧，这不过是一点小心意，孟大小姐随意处置了便好。」</p>
+<p>孟晚吟弯眉，「多谢尉侍卫，我挺喜欢的。」</p>
+<p>看着燕归一身空空，她偷偷思量着，自己应该回馈一个礼物。</p>
+<p>燕归冷漠地点了点头，转身便走了。</p>
+<p>他走远后，孟晚吟进屋，把纸鸳鸯摆在书桌上，瞧着玲珑可爱。</p>
+<p>后墙处，把这一切尽收眼底的燕归，一向淡然的面庞上，难得地红了耳廓。</p>
+<p>佳人如此，君子心悦之。</p>
+<p>（四）</p>
+<p>孟扶鹤抠掉了九皇子马车上的琉璃水晶。</p>
+<p>孟晚吟听说这件事时，还在思索嫁给君少翊的事情。</p>
+<p>他明朗温雅，笑容和煦，但她不知怎么的，就是没办法喜欢他。</p>
+<p>外面吵吵嚷嚷的声音让孟晚吟回过神。</p>
+<p>小妹急匆匆地躲进来，瞄一眼她的桌面就钻进了房门后，「姐姐，姐姐，快帮我挡挡。」</p>
+<p>孟晚吟这才发现，方才一出神，竟然在练字本上写满了太子的名字。</p>
+<p>「孟小姐，赔钱。」</p>
+<p>窗外，燕归冷冷道。</p>
+<p>孟晚吟无奈地走过去，「燕归，小妹顽皮，过几日我会派人把赔金送到九皇子府，还望九皇子宽容她一回。」</p>
+<p>燕归淡淡看了眼练字本，神情没什么大变化，「孟大小姐不用担心，这是主子在逗她玩。」</p>
+<p>孟晚吟扬起唇，「那我就不担心了。」</p>
+<p>燕归正要告辞，孟晚吟突然想起来什么，从怀里掏出一个红缨穗递给他，巧笑倩兮，「作为上次的回礼。」</p>
+<p>他愣了愣，接过红缨穗，抿了抿唇，「多谢。」</p>
+<p>或许有朝一日，他可以把红缨穗，换成腰间的佩剑。</p>
+<p>看着她巧笑嫣然的模样，燕归垂眸道：「孟大小姐不必太勉强自己，每日多笑一笑，多开心一点。」</p>
+<p>孟晚吟愣了下，摇摇头淡道：「我开不开心，哪有那么重要？」</p>
+<p>燕归静静地看了她一会儿，告辞离开。</p>
+<p>孟晚吟失神了一会儿才进了屋子。</p>
+<p>目送她进去后，燕归凝视着已经关上门的院子，满脑子都是她用清隽的小楷写了一整张的君少翊。</p>
+<p>他攥紧红缨穗，失魂落魄，没头没脑地喃喃：「很重要，比什么都重要。」</p>
+<p>（五）</p>
+<p>孟晚吟死在了清明雨时节。</p>
+<p>燕归赶到时，她已经几乎没了呼吸。</p>
+<p>佳人雅致婉约的脸庞此时已经流满了血，看起来比从前丑陋太多。她在水里慢慢往下沉，笑容一如初见。</p>
+<p>「放手吧，燕归。」</p>
+<p>孟晚吟笑得释然。</p>
+<p>她这一辈子，为了家族的荣耀而生，为了家族的荣耀而死。</p>
+<p>平平无奇的尊荣，勉勉强强的伟大。</p>
+<p>燕归不知道自己怎么放的手，不知道自己怎么回去的。</p>
+<p>他只知道，他心里的那块地方，再也不会有起伏。</p>
+<p>孟晚吟的死去，让他再也看不惯孟扶鹤。</p>
+<p>虽然他清楚，她妹妹是无辜的。</p>
+<p>但他做不到不迁怒。</p>
+<p>一年复一年，燕归渐渐回归了平静的生活。</p>
+<p>当他以为自己要一辈子守身如玉的时候，他在太子死去的那晚，看到高坡上一个极熟悉的女子盈盈而立，心里轰的一声爆炸开来。</p>
+<p>燕归真的没想到她还会再回来。</p>
+<p>之前，她先遇到的君少翊，所以他一直都充当默默守护的角色，不敢逾越雷池半步。</p>
+<p>但如今，佳人非佳人，他是第一个遇见的她，那么她以后，也只能遇见他。</p>
+<p>与她明明灭灭的眸光对视了一瞬，燕归垂下眸，颔首轻声。</p>
+<p>「在下尉燕归。」</p>
+<p>（六）</p>
+<p>孟晚吟出宫的那年，孟扶鹤刚刚诞下大梁第一个皇子。</p>
+<p>皇帝高兴，大赦天下，当即就把儿子封为皇太子。</p>
+<p>看着妹妹一直独宠后宫，生活快乐，孟晚吟终于放了心。小妹给她换了个奢华的大宅子，孟晚吟出了宫就搬了进去，每日吹吹曲，弹弹琴，好不悠闲。</p>
+<p>但除了每日来找她的燕归之外，生活好像缺了些烟火气。</p>
+<p>快乐的日子没有太久。皇太子满周岁时，边疆蛮国联合起来，进攻大梁。</p>
+<p>整个大梁一片哗然，人心惶惶，不可终日。</p>
+<p>将士们养尊处优多年，一时间皇上竟然找不到合适的总将上场。</p>
+<p>就在总将拟定的前一天晚上，孟晚吟等来了醉酒的燕归。</p>
+<p>他喝得一身酒气，眼眸却清冽得可怕。在莹莹月色下，年轻男子灼灼地盯着她，像是许诺什么珍贵的誓言。</p>
+<p>孟晚吟心里一跳，有点紧张地道：「你要做什么？」</p>
+<p>燕归沉默了良久，突然笑了。</p>
+<p>他笑得深情缱绻，是她从未见过的温柔。</p>
+<p>「待我他日凯旋，若卿尚未定亲，尉某定三书六聘，八抬大轿，十里红妆，奔赴山河，求娶佳人。」</p>
+<p>（七）</p>
+<p>燕归走的那天，孟晚吟没有去送他。</p>
+<p>据说城门口人声鼎沸，尉将军披坚执锐，铠甲森森，极为壮观。</p>
+<p>满当当的百姓都挥舞着帕子，期待着将军节节得胜，把蛮国赶出大梁。</p>
+<p>燕归骑着银鞍白马，望着城门口百姓们渴盼的目光，翻身下马，面对初升的朝阳作了一礼。</p>
+<p>「本将，定当全力以赴。」</p>
+<p>孟扶鹤挽着君少离胳膊，和抱着孩子的奶娘站在一起，目送着燕归驾马远去。</p>
+<p>他走后，城门口的人久久不散。</p>
+<p>许久后，孟扶鹤才长长地叹了口气，对旁边角落躲起来，哭成孩子的孟晚吟轻声道：</p>
+<p>「何必呢？」</p>
+<p>孟晚吟捂着眼睛，泪水像珠子般一串串地落下。</p>
+<p>不为什么，因为她怕啊。</p>
+<p>怕他死在战场上，怕他再也回不来。</p>
+<p>城门外，已经驾马离开了一段路程的尉将军，突然从怀里拿出一个红缨穗，认认真真地系在剑鞘上。</p>
+<p>系好后，他心思一动，若有所觉地回头看了一眼。</p>
+<p>日光昭昭，像是在对他进行最后的送别。</p>
+<p>尉燕归笑了。</p>
+<p>你给我红缨穗，我把它换成了佩剑，当你的骑士，为你征战沙场。</p>
+<p>自此，所向披靡。</p>
+<p>（八）</p>
+<p>一眨眼的时间，孟晚吟已经等了他三年了。</p>
+<p>她已经将近二十了，是京城出了名的老姑娘。之前还有不少权贵郎君上门求娶，现在随着她的年龄增长，她家门槛已许久未有媒人踏上。</p>
+<p>不过孟晚吟不在乎这些。</p>
+<p>她整日不是吹曲，就是进宫逗皇后刚生下的小公主玩。</p>
+<p>宫里，孟扶鹤看着她这副样子，不停地叹气：「姐姐，你要不换个人嫁了吧？」</p>
+<p>孟晚吟轻轻摸了摸小公主细滑的笑脸，笑得一脸满足，「不要。」</p>
+<p>虽然三年过去，但她还是原先的模样，婉约佳人，遗世独立。</p>
+<p>殿门口突然急急传来脚步声。</p>
+<p>「报——」太监跪在宫门口道，「边疆蛮国上书投降，尉将军大败敌军，已经到京城外了！」</p>
+<p>孟晚吟手一抖。</p>
+<p>小婴儿嘴巴一瘪，哇哇地哭了起来。</p>
+<p>奶娘急忙接过孩子，轻轻拍打着哄她。</p>
+<p>孟晚吟霍然起身，匆匆来到大街上，拦了一辆马车，让车夫带自己去城门。</p>
+<p>城门口渐渐围满百姓。</p>
+<p>孟晚吟挤到了最前面，眼巴巴地看着城门。终于在半个时辰后，城门幽幽打开。</p>
+<p>一下子有晚霞照耀过来，孟晚吟逆着昏黄的光，看向了最前面的人。</p>
+<p>燕归骑着银鞍白马，迎着城门口百姓们渴盼的目光，翻身下马，面对落日的余晖作了一礼。</p>
+<p>「本将，幸不辱命。」</p>
+<p>他直起身，冷冽的眸光在人群一扫，瞬间就定在一道婉约的身影上。</p>
+<p>盈盈而立，笑容清浅。</p>
+<p>他冷冽的眸子温和下来，微微勾唇，朝她笑道：「我回来了。」</p>
+<p>浓昏的天边晕染了橘红的光，几只燕子扑着翅膀翱飞而过，几息之间便已掠至远方。</p>
+<p>孟晚吟抬眸看了看天空，眼角有亮晶晶的液体落下。</p>
+<p>燕归燕归，有燕已南归。</p>
+<p>（番外一 完）</p>
+<h2 id="番外二沈清轩-x-孟扶鹤">番外二（沈清轩 x 孟扶鹤）</h2>
+<p>这一年，大梁的皇太子出生。</p>
+<p>虽说陛下大赦天下，但宫里的奴婢们总觉得皇上不怎么高兴。</p>
+<p>事实上确实如此。</p>
+<p>君少离坐在坤宁宫，看着每日占据皇后怀抱的小屁崽子，面沉如水。</p>
+<p>「喂，你看你脸色，会吓坏我儿子的。」孟扶鹤笑着抱紧怀里的男婴。</p>
+<p>男婴方才还在玩手指头，孟扶鹤话音一落，他不知怎么地瞅了自己的爹一眼，然后哇哇大哭起来。</p>
+<p>孟扶鹤吓了一跳，忙去哄：「宝贝别哭，娘亲在呢。」</p>
+<p>君少离沉着脸撇开视线。</p>
+<p>罢了，儿子还小，不跟他计较。</p>
+<p>皇太子一年年长大，鬼精得很，而且模样玉雪可爱，虏获了宫里所有人的心。</p>
+<p>除了陛下。</p>
+<p>皇上跟太子愈发地不对盘，这眨眼三年过去，小公主出生，两人的矛盾到了顶峰。</p>
+<p>坤宁宫，君少离跟三岁的皇太子大眼瞪小眼。</p>
+<p>君少离坐在孟扶鹤左边，皇太子坐在孟扶鹤右边。</p>
+<p>而孟扶鹤怀里抱着出生没几个月的小女婴。</p>
+<p>小公主有一双琥珀色的眼睛，此时正吸着手指，好奇地瞧着周围的人。</p>
+<p>君少离指着大门，盯着皇太子道：「带上你妹妹，出去！」</p>
+<p>皇太子乌溜溜的眼睛闪烁了下，抱紧孟扶鹤，嘴巴一瘪，奶声奶气道：「母后，父皇欺负我！」</p>
+<p>孟扶鹤摸了摸儿子的头，瞪向旁边乱吃飞醋的某人：「啧，多大的人了，跟自己儿子过不去。」</p>
+<p>君少离默了一瞬，哑口无言。</p>
+<p>以后他一定要颁布一道律令：凡皇嗣未满二十岁者，不得在一天里与母妃亲近超过一炷香！</p>
+<p>皇太子眸里闪过得意，往孟扶鹤身旁凑得更紧。</p>
+<p>哼，老男人，你斗不过本太子！</p>
+<p>君少离瞥着他，拳头攥紧，猛地起身，一手捞起小公主，一手拎起皇太子的衣领子，三步并作两步地往门口走。</p>
+<p>「奶娘，他们交给你了。」</p>
+<p>「哎——」孟扶鹤还没反应过来，就见三人已经远去。</p>
+<p>「哇哇哇，你放开我！」皇太子脸色涨红，在空中蹬着腿，几乎要被气哭了。</p>
+<p>小公主眨了眨眼，咯咯地笑了。</p>
+<p>皇太子力气太小，反抗无效，被自己的爹无情地撵了出去。</p>
+<p>奶娘惶恐地接过小公主，然后腾出一只手揽着皇太子，恭敬地往远处走。</p>
+<p>皇太子一边被撵着走远，一边愤愤不平地扭头，冲着君少离直瞪眼。</p>
+<p>君少离好心情地勾唇，「她是我的皇后，又不是你的皇后。太子乖，带妹妹去玩吧。」</p>
+<p>皇太子一愣。</p>
+<p>好像有道理哦。</p>
+<p>坤宁宫的大门被关上。</p>
+<p>君少离漫步走回孟扶鹤身边，抱着她的腰摩挲着。</p>
+<p>孟扶鹤失笑，「怎么了？」</p>
+<p>君少离沉默了下，双手将她抱起来，放在床榻上，翻身压了上去。</p>
+<p>「以后坚决不要孩子了，我忍了一年了。」</p>
+<p>他伸手扯下锦绣帐幔。</p>
+<p>满室春光。</p>
+<p>（番外二：帝后甜甜日常，完）</p>
+
+                </div>
+                <!-- 网站声明代码start -->
+                <div class="gz-post-copyright">
+                    <div>
+  <!-- 网站介绍代码start -->
+  <div>
+    <fieldset
+      style="
+        border: 1px dashed #008cff;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 2em;
+        color: #6d6d6d;
+      "
+    >
+      <legend
+        align="center"
+        style="
+          padding: 8px;
+          font-size: 18px;
+          font-weight: 600;
+          width: 55%;
+          text-align: center;
+          background-color: #008cff;
+          border-radius: 5px;
+          background-image: linear-gradient(to right, #FFCC99, #FF99CC);
+        "
+      >
+        网站基本信息
+      </legend>
+      <p>
+        💮 关于我们：
+        <span style="color: #3333ff">
+          <span style="color: #FF6666; font-size: 16px">
+            <strong>公众号：青柠软件馆</strong>
+          </span>
+        </span>
+      </p>
+      <p>
+        🍁 本站永久发布页：
+        <font color="#FF6666">https://link3.cc/qingningshare</font>
+      </p>
+      <p>
+        🍀 资源链接失效反馈&防失联请务必加入企鹅频道：<font color="#00A97F">https://pd.qq.com/s/neti8d2a</font>
+      </p>
+      <p>
+        🌸 兴趣使然的小小公益网站罢了，惟愿小众，来日方长，幸会✨
+      </p> 
+    </fieldset>
+  </div>
+  <!-- 网站介绍代码end -->
+  <br />
+</div>
+
+                </div>
+                <!-- 网站声明代码end -->
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://qnshare.github.io/post/1315/" class="post-title gt-a-link">
+                    扶山枝（下）
+                </a>
+            </div>
+        
+
+        
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'hDcUOySNcxLIuhfhlFv0sh8m-gzGzoHsz',
+		appKey: 'kQc2kUAsCtZtHy1tgB5wijMB',
+		// avatar: 'mp',
+		// avatar: '',
+		avatar_cdn: 'https://cravatar.cn/avatar/78fff0a88237cd4b1746ab471302f147.png',
+		pageSize: 10,
+		recordIp: true,
+		placeholder: '\\(≧▽≦)/你想说什么呢？聊聊叭~',
+		visitor: true,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+    </div>
+</div>
+
+<script>
+    const zooming = new Zooming({
+        bgColor: 'transparent',
+        bgOpacity: 0.8,
+        scaleExtra: 1.3
+    })
+    zooming.listen('.post-content img');
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll('.post-content a');
+        links.forEach(link => {
+            // 设置 target 属性为 _blank
+            link.setAttribute('target', '_blank');
+            // 添加 rel 属性以提高安全性
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    });
+</script>
+</body>
+</html>

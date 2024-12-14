@@ -1,0 +1,816 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+<title>影视仓&amp;TVbox接口大全，持续更新 | 馆主的小站</title>
+
+<link rel="shortcut icon" href="https://s2.loli.net/2024/11/27/tKxnw43STrCWgQk.png">
+
+<!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css -->
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<!-- 主要文件 -->
+
+    <link rel="stylesheet" href="https://qnshare.us.kg/styles/main.css">
+
+<!-- https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css -->
+<link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.0/css/bootstrap.min.css">
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/moment.js/2.27.0/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zooming/2.1.1/zooming.min.js"></script>
+
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N9SPN3FNJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-5N9SPN3FNJ');
+    </script>
+
+
+<script>
+    $(function(){
+    const host = window.location.host
+    if (host !== 'qnshare.us.kg' && ! host.startsWith('localhost') && ! host.startsWith('127.0.0.1') && ! host.startsWith('qnshare.github.io')) {
+        document.body.innerHTML = [
+            '<div style="margin: auto;">',
+            '<h1>当前页面并非原作者的主页，将在五秒后跳转至正确站点。</h1>',
+            '<br />',
+            '<h1>请此站点持有者联系我: 3361026065@qq.com</h1>',
+            '</div>',
+        ].join('')
+        document.body.style = [
+            'background-color: white;',
+            'color: black;',
+            'text-align: center;',
+            'font-size: 50px;',
+            'width: 100vw;',
+            'height: 100vh;',
+            'display: flex;',
+        ].join('')
+        setTimeout(() => {
+            window.location.href = 'https://qnshare.us.kg'
+        }, 5000)
+    }
+    });
+</script>
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.12.0/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <a href="https://qnshare.github.io">
+            <!-- /images/avatar.png -->
+            <img class="user-avatar" src="https://qnshare.us.kg/favicon.ico" alt="头像">
+        </a>
+        <a class="site-name gt-c-content-color-first" href="https://qnshare.github.io">
+            馆主的小站
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends" class="menu gt-a-link">
+                            导航
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            留言
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1734189801738" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    影视仓&amp;TVbox接口大全，持续更新
+                </h2>
+                <div class="post-info">
+                    
+                        <span id="/post/1231/" class="leancloud_visitors" data-flag-title="影视仓&amp;TVbox接口大全，持续更新">
+                            <i class="fa-solid fa-eye" style="font-size: 11px"></i>
+                            <i class="leancloud-visitors-count">Null</i>
+                        </span>
+                     
+                    <!-- <time class="post-time gt-c-content-color-first">
+                        · 2024-12-01
+                    </time>          -->
+                    
+                        <a href="https://qnshare.github.io/tag/quzhan/" class="post-tags">
+                            &nbsp;&nbsp;# 趣站
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>最后更新时间2024年11月29日，主要搜集整理网上一些好用的影视仓和tvbox接口，持续更新~</p>
+<!-- more -->
+<h2 id="01-多仓接口">01、多仓接口</h2>
+<h3 id="欧歌多仓">欧歌（多仓）：</h3>
+<blockquote>
+<p>http://tv.nxog.top<br>
+备用：<br>
+http://tv.nxog.top/api.php?mz=xb&amp;id=1&amp;b=欧歌<br>
+http://m.nxog.top/nxog/ou1.php?url=http://tv.nxog.top&amp;b=欧歌<br>
+https://tv.nxog.top/m/111.php?ou=公众号欧歌app&amp;mz=index&amp;jar=index&amp;123&amp;b=tv<br>
+欧歌fpt：<br>
+http://vip.nxog.top/<br>
+欧歌 白嫖小蚂蚁：<br>
+http://tv.nxog.top/api.php?mz=xb&amp;id=1&amp;b=白嫖小蚂蚁</p>
+</blockquote>
+<h3 id="恒星育华学堂多仓其线路中有短剧-戏曲等丰富轮播资源">恒星育华学堂（多仓，其线路中有短剧、戏曲等丰富轮播资源）：</h3>
+<blockquote>
+<p>http://恒星.net/ZC.json</p>
+</blockquote>
+<h3 id="全网影视多仓">全网影视（多仓）：</h3>
+<blockquote>
+<p>http://ww.weidonglong.com/ysc50311.json</p>
+</blockquote>
+<h3 id="小盒子多线路">小盒子（多线路）：</h3>
+<blockquote>
+<p>http://xhztv.top/tvbox.txt<br>
+备用：<br>
+http://xhztv.top/DC.txt<br>
+http://xhztv.top/dc</p>
+</blockquote>
+<h3 id="西夏影视多线路">西夏影视（多线路）：</h3>
+<blockquote>
+<p>https://d.kstore.space/download/2912/xx888.json</p>
+</blockquote>
+<h3 id="无邪多仓">无邪多仓：</h3>
+<blockquote>
+<p>https://gitee.com/wxej/wxrj/raw/master/wx.json</p>
+</blockquote>
+<h3 id="天微多线路">天微（多线路）：</h3>
+<blockquote>
+<p>https://qixing.myhkw.com/DC.txt</p>
+</blockquote>
+<h3 id="挺好分享多线路">挺好分享（多线路）</h3>
+<blockquote>
+<p>http://ztha.top/TVBox/FLCK.json</p>
+</blockquote>
+<h3 id="业余打发多线路">业余打发（多线路）：</h3>
+<blockquote>
+<p>https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/qq.json</p>
+</blockquote>
+<h3 id="蓝色影视多线路">蓝色影视（多线路）</h3>
+<blockquote>
+<p>https://raw.gitcode.com/yydg/ggdx/raw/main/Xboxb.json</p>
+</blockquote>
+<h3 id="宝盒多线路">宝盒（多线路）：</h3>
+<blockquote>
+<p>http://mzjk.top/DC</p>
+</blockquote>
+<h3 id="天天开心单仓已测">天天开心（单仓）：已测</h3>
+<blockquote>
+<p>http://rihou.cc:55 {日后服务器}<br>
+http://kxrj.site:55 {开心服务器}</p>
+</blockquote>
+<h3 id="天天秒播">天天|秒播</h3>
+<blockquote>
+<p>http://tv.laohu.cool/tvbox.json</p>
+</blockquote>
+<h3 id="电视盒子集单仓已测">电视盒子集（单仓）：已测</h3>
+<blockquote>
+<p>https://chuanshuo.77blog.cn/dc.json</p>
+</blockquote>
+<h3 id="码点小干货单仓已测">码点小干货（单仓）：已测</h3>
+<blockquote>
+<p>http://120.79.4.185/dc.json</p>
+</blockquote>
+<h3 id="飞哥传奇线路多线路">飞哥传奇线路（多线路）</h3>
+<blockquote>
+<p>https://chuanshuo.77blog.cn/dc.json</p>
+</blockquote>
+<h2 id="02-影视接口">02、影视接口</h2>
+<h3 id="动漫专属">动漫专属</h3>
+<blockquote>
+<p>https://www.yingm.cc/dm/dm.json</p>
+</blockquote>
+<h3 id="毒盒线路">毒盒线路</h3>
+<blockquote>
+<p>https://毒盒.com/tv</p>
+</blockquote>
+<h3 id="饭太硬线路">饭太硬线路</h3>
+<blockquote>
+<p>http://www.饭太硬.com/tv</p>
+</blockquote>
+<h3 id="肥猫线路">肥猫线路</h3>
+<blockquote>
+<p>http://肥猫.com/</p>
+</blockquote>
+<h3 id="摸鱼线路">摸鱼线路</h3>
+<blockquote>
+<p>http://我不是.摸鱼儿.top</p>
+</blockquote>
+<h3 id="多多网盘线路">多多网盘线路</h3>
+<blockquote>
+<p>https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json</p>
+</blockquote>
+<h3 id="ok线路">OK线路</h3>
+<blockquote>
+<p>http://ok321.top/ok</p>
+</blockquote>
+<h3 id="王二小线路">王二小线路</h3>
+<blockquote>
+<p>http://tvbox.王二小放牛娃.top</p>
+</blockquote>
+<h3 id="王二小线路备用">王二小线路（备用）</h3>
+<blockquote>
+<p>https://9280.kstore.space/wex.json</p>
+</blockquote>
+<h3 id="道长线路">道长线路</h3>
+<blockquote>
+<p>https://gitlab.com/duomv/dzhipy/-/raw/main/index.json</p>
+</blockquote>
+<h3 id="俊佬线路">俊佬线路</h3>
+<blockquote>
+<p>http://home.jundie.top:81/top98.json</p>
+</blockquote>
+<h3 id="ray明线路">Ray明线路</h3>
+<blockquote>
+<p>https://100km.top/0</p>
+</blockquote>
+<h3 id="d佬魔改线路">D佬魔改线路</h3>
+<blockquote>
+<p>https://download.kstore.space/download/2883/nzk/nzk0722.json</p>
+</blockquote>
+<h3 id="蚂蚁线路">蚂蚁线路</h3>
+<blockquote>
+<p>https://cn.kstore.space/download/2883/0110.txt</p>
+</blockquote>
+<h3 id="欧歌线路">欧歌线路</h3>
+<blockquote>
+<p>https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&amp;mz=index&amp;jar=index&amp;123&amp;b=欧歌tkh</p>
+</blockquote>
+<h3 id="吾爱线路">吾爱线路</h3>
+<blockquote>
+<p>http://52pan.top:81/api/v3/file/get/174964/%E5%90%BE%E7%88%B1%E8%AF%84%E6%B5%8B.m3u?sign=rPssLoffquDXszCARt6UNF8MobSa1FA27XomzOluJBY%3D%3A0</p>
+</blockquote>
+<h3 id="云星日记线路">云星日记线路</h3>
+<blockquote>
+<p>http://itvbox.cc/云星日记</p>
+</blockquote>
+<h3 id="小马线路">小马线路</h3>
+<blockquote>
+<p>https://szyyds.cn/tv/x.json</p>
+</blockquote>
+<h3 id="业余打发线路">业余打发线路</h3>
+<blockquote>
+<p>https://yydf.540734621.xyz/QQ/yydf2024.json</p>
+</blockquote>
+<h3 id="月光宝盒线路">月光宝盒线路</h3>
+<blockquote>
+<p>https://www.gitlink.org.cn/attachments/entries/get_file?download_url=https://www.gitlink.org.cn/api/guot55/yg/raw/pg%2Fjsm.json?ref=main</p>
+</blockquote>
+<h3 id="茶余线路">茶余线路</h3>
+<blockquote>
+<p>https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master</p>
+</blockquote>
+<h3 id="春盈天下线路">春盈天下线路</h3>
+<blockquote>
+<p>https://gitlink.org.cn/api/hailin/aishangtv5/raw/tvbox/aishang.json?ref=master</p>
+</blockquote>
+<h3 id="无意云线路">无意云线路</h3>
+<blockquote>
+<p>https://cdn05042023.gitlink.org.cn/wykj/ys/raw/branch/master/ya.json</p>
+</blockquote>
+<h3 id="龙伊线路">龙伊线路</h3>
+<blockquote>
+<p>https://龙伊.top</p>
+</blockquote>
+<h3 id="不良帅线路">不良帅线路</h3>
+<blockquote>
+<p>https://notabug.org/qizhen15800/My9394/raw/master/%e4%b8%8d%e8%89%af%e5%b8%85.json</p>
+</blockquote>
+<h3 id="青龙线路">青龙线路</h3>
+<blockquote>
+<p>https://6758.kstore.space/1.json</p>
+</blockquote>
+<h3 id="巧计线路">巧计线路</h3>
+<blockquote>
+<p>http://cdn.qiaoji8.com/tvbox.json</p>
+</blockquote>
+<h3 id="潇洒线路">潇洒线路</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json</p>
+</blockquote>
+<h3 id="高天流云线路">高天流云线路</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json</p>
+</blockquote>
+<h3 id="香雅晴线路">香雅晴线路</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json</p>
+</blockquote>
+<h2 id="03-其他线路">03、 其他线路</h2>
+<h3 id="巧记">巧记</h3>
+<blockquote>
+<p>http://cdn.qiaoji8.com/tvbox.json</p>
+</blockquote>
+<h3 id="备用">备用</h3>
+<blockquote>
+<p>http://pandown.pro/tvbox/tvbox.json</p>
+</blockquote>
+<h3 id="dxawi">dxawi</h3>
+<blockquote>
+<p>https://dxawi.github.io/0/0.json</p>
+</blockquote>
+<h3 id="香雅情">香雅情</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json</p>
+</blockquote>
+<h3 id="南风">南风</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json</p>
+</blockquote>
+<h3 id="龙伊">龙伊</h3>
+<blockquote>
+<p>https://龙伊.top</p>
+</blockquote>
+<h3 id="刘备">刘备</h3>
+<blockquote>
+<p>https://raw.liucn.cc/box/m.json</p>
+</blockquote>
+<h3 id="天天开心">天天开心：</h3>
+<blockquote>
+<p>日后服务器<br>
+http://rihou.cc:55/天天开心<br>
+开心服务器<br>
+http://kxrj.site:55/天天开心</p>
+</blockquote>
+<h3 id="挺好分享">挺好分享：</h3>
+<blockquote>
+<p>http://ztha.top/TVBox/thdjk.json</p>
+</blockquote>
+<h3 id="肥猫软件">肥猫软件：</h3>
+<blockquote>
+<p>https://mp-064c2f8f-83e1-4bd3-a4a5-103f278b40df.cdn.bspapp.com/cloudstorage/bd112246-eb72-4aeb-8566-c80aafcd42a7.bmp</p>
+</blockquote>
+<h3 id="玉玉">玉玉：</h3>
+<blockquote>
+<p>https://fmbox.cc<br>
+http://47.99.102.252/xc.json</p>
+</blockquote>
+<h3 id="六王爷">六王爷：</h3>
+<blockquote>
+<p>http://www.0746lhl.top/box/lwytv.json</p>
+</blockquote>
+<h3 id="炫猪">炫猪：</h3>
+<blockquote>
+<p>https://jihulab.com/xuanzhuapp/xzys/-/raw/main/xzvip.json</p>
+</blockquote>
+<h3 id="一十线路">一十线路：</h3>
+<blockquote>
+<p>http://jin.锦哥哥.love</p>
+</blockquote>
+<h3 id="小橙子">小橙子：</h3>
+<blockquote>
+<p>https://git.acwing.com/xcz/xcz/-/raw/master/xcz.json</p>
+</blockquote>
+<h3 id="莱妮丝">莱妮丝</h3>
+<blockquote>
+<p>https://tv.菜妮丝.top</p>
+</blockquote>
+<h3 id="拾光趣乐屋">拾光趣乐屋：</h3>
+<blockquote>
+<p>https://4708.kstore.space/omg/zy.json</p>
+</blockquote>
+<h3 id="小米">小米：</h3>
+<blockquote>
+<p>http://www.mpanso.com/小米/DEMO.json</p>
+</blockquote>
+<h3 id="魔盒">魔盒</h3>
+<blockquote>
+<p>https://git.acwing.com/999/tvbox/-/raw/main/%E9%AD%94%E7%9B%92.json</p>
+</blockquote>
+<h3 id="宝盒">宝盒：</h3>
+<blockquote>
+<p>http://ygbhbox.3vfree.club/pg/jsm.json</p>
+</blockquote>
+<h3 id="宝盒app首次加载较慢">宝盒APP（首次加载较慢）</h3>
+<blockquote>
+<p>https://git.acwing.com/bhjk/vip/-/raw/main/top.json</p>
+</blockquote>
+<h3 id="胜寒">胜寒：</h3>
+<blockquote>
+<p>https://raw.bgithub.xyz/hanhan8127/TVBox/main/hanXC.json</p>
+</blockquote>
+<h3 id="驸马">驸马：</h3>
+<blockquote>
+<p>http://fmys.top/fmys.json</p>
+</blockquote>
+<h3 id="茄子库">茄子库</h3>
+<blockquote>
+<p>https://700sjro44343.vicp.fun/eggp/1015/tv.json<br>
+https://700sjro44343.vicp.fun/eggp/tv.json</p>
+</blockquote>
+<h3 id="fty">FTY：</h3>
+<blockquote>
+<p>https://git.acwing.com/ocean2025/ocean/-/raw/main/api.json</p>
+</blockquote>
+<h3 id="平安">平安：</h3>
+<blockquote>
+<p>https://git.acwing.com/cnlv/tv/-/raw/main/stronger.json</p>
+</blockquote>
+<h3 id="夜猫子">夜猫子：</h3>
+<blockquote>
+<p>https://jihulab.com/ymz1231/xymz/-/raw/main/ymz</p>
+</blockquote>
+<h3 id="佚名">佚名</h3>
+<blockquote>
+<p>http://影视仓.com</p>
+</blockquote>
+<h3 id="yydf">yydf</h3>
+<blockquote>
+<p>https://yydf.540734621.xyz/QQ/yydf2024.json</p>
+</blockquote>
+<h3 id="小鱼">小鱼</h3>
+<blockquote>
+<p>https://download.kstore.space/download/4645/99.json</p>
+</blockquote>
+<h3 id="豆瓣弹幕">豆瓣弹幕</h3>
+<blockquote>
+<p>https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json<br>
+https://gh.yf1688.top/raw.githubusercontent.com/PizazzGY/TVBox/main/api.json</p>
+</blockquote>
+<h3 id="佚名-2">佚名</h3>
+<blockquote>
+<p>https://700sjro44343.vicp.fun/vip/vip/tv.json</p>
+</blockquote>
+<h3 id="xiaopingguo">xiaopingguo：</h3>
+<blockquote>
+<p>https://kjsc0310.github.io/tvy/jk9.json</p>
+</blockquote>
+<h3 id="卧龙">卧龙</h3>
+<blockquote>
+<p>https://pastebin.com/raw/gtbKvnE1</p>
+</blockquote>
+<h3 id="zwc365">zwc365</h3>
+<blockquote>
+<p>http://kv.zwc365.com/tv.json</p>
+</blockquote>
+<h3 id="福音">福音</h3>
+<blockquote>
+<p>https://badboy518714.github.io/TV/IPTV_JS/tvbox.json</p>
+</blockquote>
+<h3 id="柠檬失效较多">柠檬（失效较多）：</h3>
+<blockquote>
+<p>https://mirror.ghproxy.com/https://raw.githubusercontent.com/supermeguo/BoxRes/main/Myuse/cat.json</p>
+</blockquote>
+<h3 id="潇洒空间首次加载较慢失效较多">潇洒空间：首次加载较慢，失效较多</h3>
+<blockquote>
+<p>https://download.kstore.space/download/2883/nzk/nzk0722.json<br>
+https://la.kstore.space/download/2863/01.txt<br>
+https://cn.kstore.space/download/2863/01.txt</p>
+</blockquote>
+<h3 id="pg线路">PG线路：</h3>
+<blockquote>
+<p>https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json</p>
+</blockquote>
+<h3 id="hg线路结果较少">HG线路（结果较少）：</h3>
+<blockquote>
+<p>https://api.hgyx.vip/hgyx.json</p>
+</blockquote>
+<h3 id="夜猫子结果较少">夜猫子（结果较少）：</h3>
+<blockquote>
+<p>https://jihulab.com/ymz1231/xymz/-/raw/main/ymz</p>
+</blockquote>
+<h3 id="d佬魔改结果较少">D佬魔改（结果较少）：</h3>
+<blockquote>
+<p>https://download.kstore.space/download/2883/nzk/nzk0722.json</p>
+</blockquote>
+<h3 id="缝纫机结果较少">缝纫机（结果较少）：</h3>
+<blockquote>
+<p>https://mirror.ghproxy.com/https://raw.githubusercontent.com/kunkka1986/my.img/main/frjbox.json</p>
+</blockquote>
+<h3 id="小马影视首次加载较慢">小马影视（首次加载较慢）：</h3>
+<blockquote>
+<p>https://szyyds.cn/tv/x.json</p>
+</blockquote>
+<h3 id="盐枭首次加载较慢">盐枭（首次加载较慢）：</h3>
+<blockquote>
+<p>https://9xi4o.tk/tvbox.json<br>
+https://9xi4o.tk/0725.json</p>
+</blockquote>
+<h3 id="其他">其他</h3>
+<blockquote>
+<p>http://tv.nxog.top/m/</p>
+<p>https://9280.kstore.space/wex.json</p>
+</blockquote>
+<h2 id="04-电视ipv6">04、电视IPV6</h2>
+<h3 id="国内频道100个ipv6可用极少数ipv4可用">国内频道100个（ipv6可用，极少数ipv4可用）：</h3>
+<blockquote>
+<p>https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/APTV.m3u</p>
+</blockquote>
+<h3 id="国内频道85个北京联通ipv6可用极少数ipv4可用">国内频道85个（北京联通ipv6可用，极少数ipv4可用）：</h3>
+<blockquote>
+<p>https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/IPTV.m3u</p>
+</blockquote>
+<h3 id="国际频道50个ipv4可用">国际频道50个（ipv4可用）：</h3>
+<blockquote>
+<p>https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Global.m3u</p>
+</blockquote>
+<h3 id="中外网络广播电台100个ipv4可用">中外/网络广播电台100个（ipv4可用）</h3>
+<blockquote>
+<p>https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Radio.m3u</p>
+</blockquote>
+<h3 id="营养快线10瓶低调使用ipv4可用">营养快线10瓶，低调使用（ipv4可用）</h3>
+<blockquote>
+<p>https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Adult.m3u</p>
+</blockquote>
+<h3 id="yang-直播源">YanG 直播源：</h3>
+<blockquote>
+<p>官网：https://yang-1989.eu.org/</p>
+<p>电视订阅：https://tv.iill.top/m3u/Gather</p>
+<p>直播订阅（网络平台，收集网友喜欢的直播间）：https://tv.iill.top/m3u/Live</p>
+<p>MyTV订阅：https://tv.iill.top/m3u/MyTV</p>
+<p>体育订阅：https://tv.iill.top/m3u/Sport</p>
+<p>神秘订阅：https://tv.iill.top/m3u/Adult</p>
+</blockquote>
+<h3 id="范明明直播源">范明明直播源：</h3>
+<blockquote>
+<p>IPTV(IPV6专用)直播源：<br>
+https://live.fanmingming.com/tv/m3u/ipv6.m3u</p>
+</blockquote>
+<h3 id="radio直播源">Radio直播源：</h3>
+<blockquote>
+<p>https://live.fanmingming.com/radio/m3u/index.m3u</p>
+</blockquote>
+<h3 id="其他直播源">其他直播源：</h3>
+<blockquote>
+<p>IPV6专用直播源：<br>
+https://mirror.ghproxy.com/raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u</p>
+</blockquote>
+<h3 id="两个体育赛事直播网站不要相信博彩广告">两个体育赛事直播网站（不要相信博彩广告）：</h3>
+<blockquote>
+<p>https://wqzb307.com/home<br>
+https://u1.kzb0101.com/</p>
+</blockquote>
+<h3 id="一个不错的电视点播直播源收集项目主页">一个不错的电视点播直播源收集项目主页：</h3>
+<blockquote>
+<p>https://github.com/ngo5/IPTV</p>
+</blockquote>
+<p>更新搜集不易，感谢大家支持！入群请加微信【qing_ning_share】备注【网站粉丝】，不备注不通过</p>
+<p>捐助用户将获取更快速独立接口，名称公示，一对一咨询等更多服务</p>
+<figure data-type="image" tabindex="1"><img src="https://sm.ms/image/1eN3PfQuEDcMOlz" alt="图片加载失败" loading="lazy"></figure>
+
+                </div>
+                <!-- 网站声明代码start -->
+                <div class="gz-post-copyright">
+                    <div>
+  <!-- 网站介绍代码start -->
+  <div>
+    <fieldset
+      style="
+        border: 1px dashed #008cff;
+        padding: 10px;
+        border-radius: 5px;
+        line-height: 2em;
+        color: #6d6d6d;
+      "
+    >
+      <legend
+        align="center"
+        style="
+          padding: 8px;
+          font-size: 18px;
+          font-weight: 600;
+          width: 55%;
+          text-align: center;
+          background-color: #008cff;
+          border-radius: 5px;
+          background-image: linear-gradient(to right, #FFCC99, #FF99CC);
+        "
+      >
+        网站基本信息
+      </legend>
+      <p>
+        💮 关于我们：
+        <span style="color: #3333ff">
+          <span style="color: #FF6666; font-size: 16px">
+            <strong>公众号：青柠软件馆</strong>
+          </span>
+        </span>
+      </p>
+      <p>
+        🍁 本站永久发布页：
+        <font color="#FF6666">https://link3.cc/qingningshare</font>
+      </p>
+      <p>
+        🍀 资源链接失效反馈&防失联请务必加入企鹅频道：<font color="#00A97F">https://pd.qq.com/s/neti8d2a</font>
+      </p>
+      <p>
+        🌸 兴趣使然的小小公益网站罢了，惟愿小众，来日方长，幸会✨
+      </p> 
+    </fieldset>
+  </div>
+  <!-- 网站介绍代码end -->
+  <br />
+</div>
+
+                </div>
+                <!-- 网站声明代码end -->
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://qnshare.github.io/post/1321/" class="post-title gt-a-link">
+                    子母双煞
+                </a>
+            </div>
+        
+
+        
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'hDcUOySNcxLIuhfhlFv0sh8m-gzGzoHsz',
+		appKey: 'kQc2kUAsCtZtHy1tgB5wijMB',
+		// avatar: 'mp',
+		// avatar: '',
+		avatar_cdn: 'https://cravatar.cn/avatar/78fff0a88237cd4b1746ab471302f147.png',
+		pageSize: 10,
+		recordIp: true,
+		placeholder: '\\(≧▽≦)/你想说什么呢？聊聊叭~',
+		visitor: true,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">又是打工的一天(ง •_•)ง</div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/Zhou-Li-Bin/gzshare" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://pd.qq.com/s/neti8d2a" target="_blank">
+                    <i class="fab fa-qq gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+                <a href="https://mp.weixin.qq.com/s/TkUJHFLYI5EcDtq6DARIVw" target="_blank">
+                    <i class="fab fa-weixin gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div>
+        <a href="http://qnshare.us.kg/">
+Copyright © 2024 · 馆主
+</a>
+
+        <div id="showsectime" class="gt-c-content-color-first"></div>
+        <div class="gt-c-content-color-first">声明：本站所有资源均搜集于互联网或网友分享，仅供学习与交流，请下载后24小时内删除 侵犯删除/投稿请联系邮箱：3361026065#qq.com(请将#换成@)</div>
+    </div>
+</div>
+
+<script>
+    hljs.initHighlightingOnLoad()
+        function NewDate(str) {
+        str = str.split('-');
+        let date = new Date();
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+        date.setUTCHours(0, 0, 0, 0);
+        return date;
+    }
+
+    function showsectime() {
+        let birthDay = NewDate("2023-12-31");
+        let today = new Date();
+        let timeold = today.getTime() - birthDay.getTime();
+        let sectimeold = timeold / 1000;
+        let secondsold = Math.floor(sectimeold);
+        let msPerDay = 24 * 60 * 60 * 1000;
+        let e_daysold = timeold / msPerDay;
+        let daysold = Math.floor(e_daysold);
+        let e_hrsold = (daysold - e_daysold) * -24;
+        let hrsold = Math.floor(e_hrsold);
+        let e_minsold = (hrsold - e_hrsold) * -60;
+        let minsold = Math.floor((hrsold - e_hrsold) * -60);
+        let seconds = Math.floor((minsold - e_minsold) * -60).toString();
+        
+        document.getElementById("showsectime").innerHTML = 
+            "本网站已稳定运营" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        
+        setTimeout(showsectime, 1000);
+    }
+    showsectime();
+
+</script>
+
+    </div>
+</div>
+
+<script>
+    const zooming = new Zooming({
+        bgColor: 'transparent',
+        bgOpacity: 0.8,
+        scaleExtra: 1.3
+    })
+    zooming.listen('.post-content img');
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll('.post-content a');
+        links.forEach(link => {
+            // 设置 target 属性为 _blank
+            link.setAttribute('target', '_blank');
+            // 添加 rel 属性以提高安全性
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    });
+</script>
+</body>
+</html>
